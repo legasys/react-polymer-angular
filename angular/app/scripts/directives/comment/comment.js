@@ -6,13 +6,14 @@
  * @description
  * # comment
  */
-angular.module('comment', [])
+angular.module('comment', ['commentElapsedTime'])
   .directive('commentModel', function () {
     return {
       template: '<div class="comment">' +
                   '<h2 class="commentAuthor">' +
                       '{{author}}' +
                   '</h2>' +
+                  '<comment-elapsed-time></comment-elapsed-time>' +
                   '<ng-transclude></ng-transclude>' +
                 '</div>',
       restrict: 'E',
