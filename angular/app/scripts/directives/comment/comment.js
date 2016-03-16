@@ -11,15 +11,16 @@ angular.module('comment', ['commentElapsedTime'])
     return {
       template: '<div class="comment">' +
                   '<h2 class="commentAuthor">' +
-                      '{{author}}' +
+                      '{{author}}' + 'x ' +
                   '</h2>' +
-                  '<comment-elapsed-time></comment-elapsed-time>' +
                   '<ng-transclude></ng-transclude>' +
+                  'yy'+'<comment-elapsed-time></comment-elapsed-time>' +
                 '</div>',
       restrict: 'E',
       transclude: true,
       scope: {
-        author: '@'
+        author: '@',
+        createdOn: '@'
       },
       link: function postLink(scope, element, attrs) {}
     };
