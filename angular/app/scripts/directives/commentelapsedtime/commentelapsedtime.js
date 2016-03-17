@@ -5,7 +5,7 @@ angular.module('commentElapsedTime', ['elapsedTimeHelper'])
   .directive('commentElapsedTime', function () {
     return {
       template: '<div class="comment-elapsed-time">' +
-      '<p>time passed' + " {{elapsedTime}} " + 'will be here </p>' +
+      '<p> {{elapsedTime}} </p>' +
       '</div>',
       restrict: 'E',
       scope: {

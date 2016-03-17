@@ -6,7 +6,7 @@ angular.module('elapsedTimeHelper', [])
   var useSecondsAgoEndsAt = 59;
   var useMinutesAgoStartAt = 60;
   var useHoursAgoStartAt = (59*60);
-  var useDaysAgoStartAt = (23*60*60)+(59*60);
+  var useDaysAgoStartAt = (24*60*60)-60;
 
   if (secondsElapsed >= useDaysAgoStartAt) {
     var daysElapsed =  Math.round(parseFloat(secondsElapsed/(60.0*60.0*24.0)));
