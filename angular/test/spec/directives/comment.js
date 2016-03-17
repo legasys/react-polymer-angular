@@ -21,4 +21,10 @@ describe('Directive: comment', function () {
   it('should render the msg', function (){
     expect(element.find('span').html()).toBe('hola');
   });
+
+  it('should render the comment-elapsed-time', function (){
+    expect(element.find('comment-elapsed-time')).toBeDefined();
+  });
+
+
 });
