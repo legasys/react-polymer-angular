@@ -9,16 +9,10 @@ describe('Directive: commentElapsedTime', function () {
 
   beforeEach(inject(function ($rootScope, $compile) {
     scope = $rootScope.$new();
-    element = angular.element('<comment-elapsed-time>hola</comment-elapsed-time>');
+    element = angular.element('<comment-elapsed-time></comment-elapsed-time>');
     element = $compile(element)(scope);
     scope.$digest();
   }));
 
-  it('should render the author', function (){
-    expect(element.find('h2').html()).toBe('Santiago');
-  });
 
-  it('should render the msg', function (){
-    expect(element.find('span').html()).toBe('hola');
-  });
 });
